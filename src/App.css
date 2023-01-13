@@ -1,0 +1,208 @@
+.main-container{
+  border: 2px solid black;
+  position: relative;
+
+}
+.product-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  align-items: flex-end;
+  justify-content: flex-end;
+  
+  
+  
+  border: 2px solid black;
+  
+}
+.products{
+  border: 2px solid black;
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 8px;
+  
+  
+ 
+  width: 20%;
+  height: 350px;
+  margin: 2px;
+  background-color: rgb(255, 252, 247);
+  
+  
+}
+/* styling cart */
+.cart-product-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ 
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+  
+  
+}
+.cart-product-container h2{
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+.cart-products{
+  border: 2px solid black;
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 8px;
+  
+  
+ 
+  width: 20%;
+  height: 350px;
+  margin: 2px;
+  background-color: rgb(255, 252, 247);
+  
+  
+}
+
+
+.cart-btn{
+  height: 40px;
+  background-color: rgb(94, 83, 61);
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.cart-btn:hover{
+  cursor: pointer;
+  background-color: rgb(243, 248, 248);
+}
+.delete-cart{
+  height: 50px;
+  background-color:rgb(136, 46, 46) ;
+  display: flex;
+}
+/* styling navbar */
+.logo{
+ 
+  
+  position: absolute;
+  left: 0;
+  margin: 30px;
+  
+  color: white;
+  font-size: 40px;
+ 
+
+}
+
+.nav-cart{
+ 
+ 
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+
+  margin: 30px;
+}
+.nav-bar{
+  display: flex;
+  
+
+  border: 2px solid black;
+  background-color: rgb(94, 83, 61);
+  height: 100px;
+  color: white;
+  
+ 
+}  
+/* styling filter */
+.categorybuttons{
+  background-color: rgb(255, 252, 247);
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 125px;
+  width: 17%;
+  
+
+  
+}
+.categorybuttons button{
+  margin: 6px;
+  height: 30px;
+  background-color: rgb(94, 83, 61);
+}
+.categorybuttons button:hover{
+  cursor: pointer;
+  background-color:rgb(243, 248, 248) ;
+}
+.ratingbuttons{
+  background-color: rgb(255, 252, 247);
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 305px;
+  width: 17%;
+  
+
+  
+}
+.ratingbuttons button{
+  margin: 6px;
+  height: 30px;
+  background-color: rgb(94, 83, 61);
+
+}
+.ratingbuttons button:hover{
+  cursor: pointer;
+  background-color:rgb(243, 248, 248) ;
+}
+.stockbuttons{
+  background-color: rgb(255, 252, 247);
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 505px;
+  width: 17%;
+  
+
+  
+}
+.stockbuttons button{
+  margin: 6px;
+  height: 30px;
+  background-color: rgb(94, 83, 61);
+
+}
+.stockbuttons button:hover{
+  cursor: pointer;
+  background-color:rgb(243, 248, 248) ;
+}
+.sortbypricebutton{
+  background-color: rgb(255, 252, 247);
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 705px;
+  width: 17%;
+  
+
+  
+}
+.sortbypricebutton button{
+  margin: 6px;
+  height: 30px;
+  background-color: rgb(94, 83, 61);
+
+}
+.sortbypricebutton button:hover{
+  cursor: pointer;
+  background-color:rgb(243, 248, 248) ;
+}
