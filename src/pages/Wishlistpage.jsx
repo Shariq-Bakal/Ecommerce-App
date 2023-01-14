@@ -34,4 +34,4 @@ function removewishlist(item){
   )
 }
 
-export default Wishlistpage
+export {Wishlistpage}

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
+import { BrowserRouter } from "react-router-dom";
 
 import Context from "./pages/Context";
 import Wishcontext from "./contexts/Wishcontext";
@@ -12,13 +13,16 @@ makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
-  
-      <Context>
+    <BrowserRouter>
+    <Context>
         <Wishcontext>
         <App />
        </Wishcontext>
       
      </Context>
+    </BrowserRouter>
+  
+      
       
      
     

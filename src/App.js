@@ -1,14 +1,14 @@
 import "./App.css";
 import logo from "./logo.png";
 import Productpage from "./pages/Productpage";
-import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
+import {Routes, Route,} from "react-router-dom";
 import { Cartpage } from "./pages/Cartpage";
-import Wishlistpage from "./pages/Wishlistpage";
+import {Wishlistpage} from "./pages/Wishlistpage";
 function App() {
   return ( 
   
 
-  <Router>
+  
      
    
    
@@ -19,7 +19,7 @@ function App() {
     <Routes>
     <Route path="/" element={<Productpage/>}/>
     <Route path="/Wishlistpage" element={<Wishlistpage/>}/>
-    <Route path='/Cartpage' element={<Cartpage/>}/>
+    <Route path="/Cartpage" element={<Cartpage/>}/>
     
   
     
@@ -32,7 +32,7 @@ function App() {
     
     
 
-  </Router>
+  
 
    
  

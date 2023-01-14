@@ -6,10 +6,11 @@ const Navbar  = () => {
     <div> <div className='nav-bar'>
     
       
-      <span className='nav-cart'><Link style={{textDecoration:"none",color:"black"}} to="./cartpage">Cart</Link></span>
+      <a className='nav-cart'><Link style={{textDecoration:"none",color:"black"}} to="/cartpage">Cart</Link></a>
+      <a className='nav-wishlist'><Link style={{textDecoration:"none",color:"black"}} to="/wishlistpage">Wishlist</Link></a>
     
-    <span className='logo'><Link style={{textDecoration:"none",color:"black"}} to="/">Wintra</Link></span>
-    <span className='nav-wishlist'><Link style={{textDecoration:"none",color:"black"}} to="./wishlistpage">Wishlist</Link></span>
+    <a className='logo'><Link style={{textDecoration:"none",color:"black"}} to="/">Wintra</Link></a>
+    
     </div></div>
   )
 }
