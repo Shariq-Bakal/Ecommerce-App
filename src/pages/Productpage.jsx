@@ -2,6 +2,7 @@ import React, {useState, useEffect } from "react"; //This is our first step in w
 import axios from "axios";//This is our third step in which we fist download a axios in terminal and after that we simply import it
 import Navbar from "../components/Navbar";
 import {Cart} from "./Context";
+import {Wishlist} from "../contexts/Wishcontext";
 import { useContext } from "react";
 import Categorybuttons from "./Categorybuttons";
 import Ratingbtn from "../components/Ratingbtn";
@@ -14,7 +15,8 @@ import Sort from "../components/Sort";
 // This is the productpage
 const Productpage = () => {
     const [product,setproducts] = useState([]) //This step was performed to show items in the window
-    const {cart,setcart} =useContext(Cart);//This step was used for adding to cart including the function below
+    const {cart,setcart} =useContext(Cart);//This step was used for adding to cart including the functiobelow
+    const {wishlist,setwishlist} = useContext(Wishlist)
     
     
     function addtocart(item){
@@ -26,7 +28,9 @@ const Productpage = () => {
     }
 
   
-   
+   function addtowishlist(item){
+    setwishlist([...wishlist,item])
+   }
     
     
     
@@ -74,13 +78,14 @@ const Productpage = () => {
             
             {
                 product.map(item=>{
-                    return <div className="products"> <img height="70%" width="100%" src="https://m.media-amazon.com/images/I/61y7eNVNEeL._UY741_.jpg"/> <div className="productdetails"> price: ${item.price} <br/>Rating:{item.ratings } <br/> Description: {item.title} <br/>   </div><button onClick={()=>addtocart(item)} 
-                      className="cart-btn">Add to cart</button></div>
+                    return <div className="products"> <img height="70%" width="100%" src="https://m.media-amazon.com/images/I/61y7eNVNEeL._UY741_.jpg"/> <div className="productdetails"> price: ${item.price} <br/>Rating:{item.ratings } <br/> Description: {item.title} <br/>   </div><button onClick={()=>addtocart(item)}className="cart-btn">Add to cart</button> <button onClick={()=>addtowishlist(item)} className="wishlist-btn">Add to Wishlist</button></div>
                         
                         
                     
                 })
-            }
+             }
+           
+            
             
 
            

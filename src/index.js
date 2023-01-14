@@ -5,17 +5,20 @@ import App from "./App";
 import { makeServer } from "./server";
 
 import Context from "./pages/Context";
+import Wishcontext from "./contexts/Wishcontext";
 
 // Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
-   
+  
       <Context>
-      <App />
-
-      </Context>
+        <Wishcontext>
+        <App />
+       </Wishcontext>
+      
+     </Context>
       
      
     
