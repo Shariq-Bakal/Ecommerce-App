@@ -62,7 +62,7 @@ const Productpage = () => {
     return (
         <>
         <div>
-         <Navbar product={product}/>
+         <Navbar  />
          
        
          
