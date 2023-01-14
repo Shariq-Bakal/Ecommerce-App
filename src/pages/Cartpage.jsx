@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 
 
 
+
 const Cartpage = () => {
   const {cart,setcart} = useContext(Cart)
  

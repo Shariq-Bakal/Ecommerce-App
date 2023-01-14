@@ -62,7 +62,7 @@ const Productpage = () => {
     return (
         <>
         <div>
-         <Navbar/>
+         <Navbar product={product}/>
          
        
          
@@ -78,7 +78,7 @@ const Productpage = () => {
             
             {
                 product.map(item=>{
-                    return <div className="products"> <img height="70%" width="100%" src="https://m.media-amazon.com/images/I/61y7eNVNEeL._UY741_.jpg"/> <div className="productdetails"> price: ${item.price} <br/>Rating:{item.ratings } <br/> Description: {item.title} <br/>   </div><button onClick={()=>addtocart(item)}className="cart-btn">Add to cart</button> <button onClick={()=>addtowishlist(item)} className="wishlist-btn">Add to Wishlist</button></div>
+                    return <div className="products"> <img height="70%" width="100%" src={"https://m.media-amazon.com/images/I/61y7eNVNEeL._UY741_.jpg"}/> <div className="productdetails"> price: ${item.price} <br/>Rating:{item.ratings } <br/> Description: {item.title} <br/>   </div><button onClick={()=>addtocart(item)}className="cart-btn">Add to cart</button> <button onClick={()=>addtowishlist(item)} className="wishlist-btn">Add to Wishlist</button></div>
                         
                         
                     
