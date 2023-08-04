@@ -62,17 +62,31 @@ const Productpage = () => {
     return (
         <>
         <div>
-         <Navbar  />
+         <Navbar />
+         <br/>
+         <div className="product-intro">
+            
+
+         </div>
+         <h2 className="product-title">ORDER NOW YOUR FAVOURITE PRODUCTS</h2>
+         <br/>
+         
+         
          
        
          
          
         
             <div className="product-container">
-            <Categorybuttons setproducts={setproducts} product={product}/>
-            <Ratingbtn setproducts={setproducts}/>
-            <Stock setproducts={setproducts}/>
-            <Sort setproducts={setproducts}/>
+           
+            
+            <div className="buttons-container">
+         <Categorybuttons setproducts={setproducts} product={product}/>
+        <Ratingbtn setproducts={setproducts}/>
+        <Stock setproducts={setproducts}/>
+        <Sort setproducts={setproducts}/>
+         </div>
+        
             
            
             
